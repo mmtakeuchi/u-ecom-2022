@@ -44,10 +44,10 @@ class App extends React.Component {
       <div>
         <Header />
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route path="shop" element={<ShopPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="shop/*" element={<ShopPage />} />
           <Route path="checkout" element={<CheckoutPage />} />
-          <Route exact path="signin" element={<Signin />} />
+          <Route path="signin" element={<Signin />} />
         </Routes>
       </div>
     );
